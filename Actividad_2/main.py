@@ -1,4 +1,4 @@
-from Shape import (point, line, shape, rectangle, square, triangle,
+from Shape import (point, rectangle, square,
                 isosceles, equilateral, scalene, trirectangle)
 
 def get_point_from_user(prompt):
@@ -7,8 +7,8 @@ def get_point_from_user(prompt):
     """
     while True:
         try:
-            x = float(input(f"Ingrese la coordenada x para (Se sugiere el 4) {prompt}: "))
-            y = float(input(f"Ingrese la coordenada y (Se sugiere el 3) para {prompt}: "))
+            x = float(input(f"Ingrese la coordenada x para {prompt}: "))
+            y = float(input(f"Ingrese la coordenada y para {prompt}: "))
             return point.Point(x, y)
         except ValueError:
             print("Error: Las coordenadas deben ser números. Intente nuevamente.")
